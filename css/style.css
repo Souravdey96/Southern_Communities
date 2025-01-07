@@ -1,0 +1,372 @@
+*{
+    list-style: none;
+    text-decoration: none !important;
+    font-family: "Nunito Sans", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.h3-title{
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.h4-title{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.col-p{
+    color: #626262;
+
+}
+
+.navbar .container-fluid .navbar-nav{
+    gap: 30px !important;
+}
+
+.navbar .container-fluid .nav-link {
+    transition: all 0.3s ease !important;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navbar .container-fluid .nav-link:hover{
+    text-decoration: dashed;
+    color: #fff !important;
+    border-radius: 10px !important;
+}
+
+.navbar .container-fluid .nav-link:before{
+    transition: all 0.3s ease;
+    content: url(../IMG/nav-abs-star.png);
+    opacity: 0;
+    display: block;
+    background: transparent;
+}
+
+.navbar .container-fluid .nav-link:hover::before{
+    content: url(../IMG/nav-abs-star.png);
+    opacity: 1;
+    position: relative;
+    left: 50%;
+}
+
+.navbar .container-fluid .nav-menu-b{
+    margin-top: 12px;
+}
+
+.navbar .container-fluid .nav-menu-b a{
+    transition: all 0.3s ease;
+    padding-block: 8px;
+    padding-inline: 15px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.navbar .container-fluid .nav-menu-b a i{
+    padding-left: 5px;
+}
+
+.navbar .container-fluid .nav-menu-b a:hover{
+    background-color: #fff;
+    color: #000 !important;
+}
+
+.banner{
+    min-height: 862px;
+    background: url(../IMG/banner-back.png) no-repeat center center/cover;
+}
+
+.banner .container .row h1{
+    font-size: 72px;
+    font-weight: bold;
+    /* margin-right: 400px; */
+}
+
+.banner .container .row a{
+    padding: 8px 21px;
+    background-color: #CE4A3D;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    display: block;
+    width: 30%;
+}
+
+.banner .container .row a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* ===============build============ */
+.build{
+    min-height: 553px;
+}
+
+.build h2{
+    font-weight: bolder;
+}
+
+.build a{
+    background-color: #000;
+    width: 28%;
+    padding: 8px 21px;
+    color: white;
+    transition: all 0.3s ease; 
+    border-radius: 20px;
+}
+
+.build a:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+}
+
+/* ================services= ============= */
+.services{
+    min-height: 650px;
+    overflow: hidden;
+}
+
+.services .container .row .know a{
+    background-color: #000;
+    text-transform: uppercase;
+    padding: 8px 21px;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.services .container .row .know a:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+}
+
+.services .container .serv-layout{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.services .container .serv-layout .swiper {
+    width: 120%;
+    height: 100%;
+    position: relative;
+    right: 10%;
+}
+
+.services .container .serv-layout .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    min-height: 600px;
+    padding-inline: 20px;
+    padding-bottom: 60px;
+}
+
+.services .container .serv-layout .swiper-slide .text-left{
+    height: 81px !important;
+}
+
+.services .container .serv-layout .swiper-slide p{
+    font-size: 14px;
+    overflow: hidden !important;
+}
+
+.services .container .serv-layout .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services .container .serv-layout .swiper-slide i{
+    padding: 10px 15px;
+    background-color: #CE4A3D;
+    border-radius: 50px; 
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.services .container .serv-layout .swiper-slide i:hover{
+    background-color: #fff;
+    color: #000 !important;
+}
+
+/* ==================blogs================== */
+.blogs{
+    min-height: 474px;
+}
+
+.blogs .container .row .know a{
+    background-color: #000;
+    text-transform: uppercase;
+    padding: 8px 21px;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.blogs .container .row .know a:hover{
+    background-color: #fff; 
+    color: #000;
+    border: 1px solid black;
+}
+
+.blogs .container .row .blog-layout .swiper {
+    width: 83%;
+    height: 100%;
+}
+
+.blogs .container .row .blog-layout .swiper .swiper-wrapper{
+    width: 100% !important;
+}
+
+.blogs .container .row .blog-layout .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    min-height: 333px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.blogs .container .row .blog-layout .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==============footer================== */
+.end{
+    min-height: 381px;
+    background-color: #3e4a6e;
+}
+
+.end .container .row ul{
+    padding: unset;
+}
+
+.end .container .row .col-lg-4{
+    min-height: 182px;
+}
+
+.end .container .row .col .commnuities{
+    padding-top: 160px !important;
+}
+
+@media(max-width: 992px){
+    #build-row-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .build .container .row .col-lg-10{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .build .container .row .col-lg-10 h2{
+        text-align: center;
+        position: relative;
+        left: 5%;
+    }
+
+    .build .container .row .col-lg-4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .build .container .row .col-lg-6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p{
+            text-align: center;
+        }
+    }
+
+    .build .container .row .col-lg-10 .heading span{
+        position: relative;
+        left: 20%;
+    }
+}
+
+@media(max-width: 767px){
+    .blogs .container .row .blog-a{
+        max-width: 70%;
+        flex: 0 0 70%;
+    }
+}
+
+@media(max-width: 575px){
+    .banner .container .row{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .container .row .col-lg-6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .banner .container .row .col-lg-6 h1{
+        text-align: center;
+    }
+
+    .banner .container .row h1 {
+        font-size: 59px;
+        font-weight: bold;
+        /* margin-right: 400px; */
+    }
+
+    .banner .container .row a {
+        padding: 8px 9px;
+        background-color: #CE4A3D;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        display: block;
+        width: 32%;
+    }
+
+    .build a {
+        background-color: #000;
+        width: 31%;
+        padding: 8px 8px;
+        color: white;
+        transition: all 0.3s ease;
+        border-radius: 20px;
+    }
+    #build-row-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .build .container{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column;
+    }
+    .build .container .row .heading h2{
+        text-align: initial !important;
+    }
+}
